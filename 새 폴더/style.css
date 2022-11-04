@@ -1,0 +1,59 @@
+.section{
+    width: auto;
+    
+}
+h1{
+    text-align: center;
+}
+.tip{
+    
+    text-decoration: underline red;
+}
+img{
+    vertical-align: text-bottom;
+}
+div{
+    overflow: hidden;
+}
+.inline h3 {
+    text-align: center;    
+}
+.block h3 {
+    text-align: center;    
+}
+.css{ border: solid 8px rgb(199, 49, 49);    
+    border-radius: 30px;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    
+}
+.css ol{ 
+    display:block;
+    
+}
+.css h6{
+    
+    text-align: center;
+}
+.forunderline{
+    text-decoration: underline;
+    text-align: center;
+}
+.position span{
+    text-align: left;
+    padding-left: 10px;
+}
+.ani{
+    
+    margin-top: 200px;
+}
+.ani u{
+    text-decoration: underline red;
+}
+.ex{
+    margin-top: 200px;
+}
+.position{
+    margin-top: 200px;
+}

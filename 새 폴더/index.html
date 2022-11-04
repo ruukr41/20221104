@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20221104</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="bi">
+        <h1>1.inline 태그와 block태그 분류</h1>
+
+        <div class="inline">
+            <figure><img src="inline.png" alt="">
+           <h3> inline태그 종류</h3>
+        </figure>
+        </div>
+        
+        <div class="block">
+            <figure><img src="blcok.png" alt="">
+                <h3>block태그 종류</h3>
+        </figure>           
+        </div>
+        <div class="tip">
+        *하나하나 외울 필요 없고 각 태그가 무슨 기능을 하는지 알고있는 정도면 될듯.
+        각 기능들이 있다는 사실을 인지하는 정도로 나중에 필요 할 때 구글링 해서 쓰면 됨.
+    </div>
+    </div>
+    </section><br><br><br><br><br><br><br><br><br><br>
+
+    <section class="text">
+        <h1>2-1.기본적인 fontstyle(꾸미기)기능 태그들</h1>
+            <p> font-size:폰트크기 <br>
+                color:폰트색<br>
+                background:폰트배경 <br>
+                font-weight:폰트 굵기 <br>
+                border: 폰트가 써진 공간<br>
+                font-family: 폰트 종류 (고딕,맑음 같은거)<br>
+                position: <br>
+                display: <br>
+                ::before{ } <br>
+                ::after{  } <br>
+                -------까지 기본적으로 많이 쓴다.----- <br>
+                text-shadow: x축 y축 투명도(블러값) color;<br>
+                box-shadow: x축 y축  투명도(블러값) color; <br>
+            </p>
+
+
+        <h1>2-2.기본적인 container(div..등 등)꾸미기 기능 태그들 </h1>
+            <p>
+                width:넓이 <br>
+                height:높이 <br>
+                margin:바깥쪽 여백 <br> 
+                padding:안쪽 여백     <br>           
+                background-color:공간 배경색 <br>
+                display: '요소 크기를 어떻게 결정할건가' 를 결정하는 속성 <br> 
+                position:  위치지정요소. 상대적 위치를 지정한다던가 고정시킨다던가하는 거 <br>
+            </p>
+                <div class="forunderline">
+                <ul><li>
+                    margin과 padding은 border(공간의 가장자리)의 가변(top,right,bottom,left)을 기준으로 한다. ☆ </li></ul> 
+            </div>
+            <div class="sty">
+                <ul>
+                 <li> padding=안쪽에서의 여백 값. 그러므로  width와height는 적용 못시킴 <br>
+                      그런데 'display:blcok'을 적용시키면 적용 가능함. 여백의 값을 증감시킬 수 있음.</li>
+                 <li> margin=바깥의 여백값이다.</li>
+                </ul>
+            </div>
+            
+    </section><br><br><br><br><br><br>  <br><br><br><br>
+
+    <section>
+        <h1>3.스타일 시트의 종류와 개념[css는 여기서부터 시작임]</h1>
+        <div class="st">
+            <p>*순서는 웹에서 발현 되는 우선순위임 
+                <ol>
+                <li> <h4>!important</h4> </li>
+                <p> (4개중 제일 강력함) <br><br> 보통 웹폰트 등을 긁어 올 때나 css 문서 첫줄에 박는다 <br><br> 
+                    !important는 말 뜻 그대로 '중요한 속성' 을 의미하고, 해당 속성이 변경되지 않도록 하는 역할을 한다.
+
+                    만약 변경하고 싶다면 똑같이 속성에 !important 속성을 삽입해주면 된다.
+                </p>
+                <li> <h4>인라인 스타일시트</h4></li>
+                <p> 인라인 스타일이란 HTML 요소 내부에 style 속성을 사용하여 CSS 스타일을 적용하는 방법입니다.
+
+                    이러한 인라인 스타일은 해당 요소에만 스타일을 적용할 수 있습니다.
+                    예)h2 style="color:green; text-decoration:underline"</p>
+                <li> <h4>내부스타일시트</h4></li>
+                <p> <ol>
+                    <li>웹 문서 안에서 사용할 스타일을 문서 안에서 정리한것</li>
+                    <li>모든 스타일 정보는 head 안에서 정의한다.</li>
+                    <li>style태그 안에 작성</li>
+                    예) <img src="내부스타일시트.png" alt="">
+                </p>
+                        
+                    
+                </ol> 
+                <li> <h4>외부스타일시트[실무에선 외부스타일시트만 씀]</h4></li>
+                <p>
+                    
+                    사이트의 전체 스타일을 손쉽게 제어할 수 있습니다. <br>
+                    또한, 웹 사이트의 스타일을 일관성 있게 유지할 수 있게 해주며, 그에 따른 유지 보수 또한 쉬워집니다.</p>
+            </p>
+                </ol><br><br><br><br><br><br><br><br><br>
+                <p>                                            
+                        <h1>4.태그 선택자</h1>
+                        <ol>
+                        <li>id 선택자- 딱 한 번만 적용시킬 때 아이디 선택자 씀</li>
+                        <li>class 선택자- 상당히 많이 사용 됨 주로 div class="" 로 많이 씀. <br><br>
+                            ** tip단축키 : (쩜) .누르고 클래스명 작명하고 엔터누르면 클래스명 자동 입력 됨  <br>
+                                  # 누르고 id명 작명하고 엔터누르면 id명 자동 입력됨  **
+                        </li>
+                        
+                        
+                    </ol>
+                </p>
+                <br><br><br><br><br><br><br><br><br>
+            
+        </div>
+        <div class="css">
+        <h1>★★5.css태그중 반드시 알아두어야 할 개념★★</h1>
+        
+        <h4>
+        <ol>
+            <li>display <br><h5>none,block,inline,inline-block,</h5></li>
+            <li>position<br><h5>relative,absolute,fixed,sticky</h5></li>
+            <li>before , afer 가상요소</li>
+                <ul>
+                    <li><h5>첫줄에 일단 content:''; 적용시켜야함</h5></li>
+                    <img src="BA.png" alt="">
+                    
+                </ul>
+                <h6>↓활용하여 다음 처럼 사용 할 수 있다.↓</h6>
+                <img src="BAE.png" alt="">
+
+        </ol>
+        </h4>
+        
+        
+                    
+        </div><br><br><br><br><br>
+       <div class="display"> <h1>5-1.display요소와 각 요소에 대한 설명</h1>
+<ol>
+    
+        <p>
+        
+        <strong><li> display: none;</strong>
+
+화면에서 사라짐. 크기 자체도 차지하지 않음</li><br>
+
+<strong><li>display: block;</strong>
+
+일반적으로 설정하지 않아도 div가 갖게되는 기본값입. (태그에 따라 기본값이 다를 수 있음.)
+
+기본적으로 width 가 자신의 컨테이너의 100% 가 되게끔 함. 쉽게 말해, 가로 한 줄을 다 차지하게 됨.</li><br>
+
+<strong><li>display: inline;</strong>
+
+컨텐츠를 딱 감쌀정도의 크기만 갖게됨.
+ block태그와 다르게 줄바꿈이 되지 않고, 반드시 컨텐츠를 감싸게 되고, 크기를 변화시킬 수 없음.</li> <br>
+
+ <strong><li>display: inline-block;</strong>
+
+inline과 block의 특성을 합쳐놓은 속성임. 기본적으로는 inline의 속성을 지니고 있지만,
+ 임의로 크기를 바꿔줄 수 있음.  </li><br><br><br><br><br><br>
+</p>
+</ol>
+</div>
+<div class="position"> <h1>5-2.position요소와 각 요소에 대한 설명</h1>
+    <span>
+       <p>
+       <h4> position 속성을 별도로 지정해주지 않으면 기본값인 static이 적용됩니다.
+이 말은 요소들이 HTML에 작성된 순서 그대로 브라우저 화면에 표시가 된다는 것을 뜻하며, 
+따라서 top, left, bottom, right 속성값은 position 속성이 static일 때는 무시됩니다.
+</h4><br><br><br></p></span>
+<ol></li>
+    <strong> <li>position: fixed   </strong><br>
+        position 속성을 fixed로 지정하면 이렇게 요소를 항상 고정된(fixed) 위치에 배치할 수 있습니다.
+
+        이게 가능한 이유는 fixed 속성값의 배치 기준이 자신이나 부모 요소가 아닌 뷰포트(viewport), 즉 브라우저 전체화면이기 때문인데요.
+        top, left, bottom, right 속성은 각각 브라우저 상단, 좌측, 하단, 우측으로 부터 
+        해당 요소가 얼마나 떨어져있는지를 결정합니다. </li><br>
+        <strong><li>position: relative</strong><br>
+        position 속성을 relative로 설정하게 되면, 
+        요소를 원래 위치에서 벗어나게 배치할 수 있게 됩니다. 
+        요소를 원래 위치를 기준으로 상대적(relative)으로 배치해준다고 생각하시면 이해가 쉬울 것 같은데요.
+        요소의 위치 지정은 top, bottom, left, right 속성을 이용해서, 
+        요소가 원래 위치에 있을 때의 상하좌우로 부터 얼마나 떨어지게 할지를 지정할 수 있습니다.</li><br>
+        <strong> <li>position: absolute</strong><br>
+        position 속성이 absolute일 때 해당 요소는 배치 기준을 자신이 아닌 상위 요소에서 찾습니다.
+        부모 요소(가장 가까운 상위 요소)를 기준으로 top, left, bottom, right 속성을 적용.
+        어떤 요소의 display 속성을 absolute로 설정하면, 부모 요소의 display 속성을 relative로 지정해주는 것이 관례.</li><br>
+        <strong> <li>position: sticky</strong><br>
+        부모요소의 상 하에 스크롤에 따라 붙는다.
+        말그대로 스크롤링에 따라 스티커처럼 끈적하게 붙는다.</li><br>
+
+</ol>
+    </ol>       
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="ani">
+          <h1>  6.animation [css는 여기가 고비이며 마지막 page임]</h1>
+            <p>
+            animation에는 크게 볼 떄 두가지 속성이 필요함.
+            '시간'과 '상태'임
+            시간과 관련 된 속성들은 animation에서 고유적으로 사용 됨.
+            상태와 관련된 속성들은 수업중 계속 써왔음
+            (border,color,width,height 등등..)
+
+            <br><br> animation속성에 활용되는 태그는 너무 많기 때문에 구글링으로 예제들을 보는게 좋을 듯 하다.
+
+            
+
+                
+    </section>
+
+    <section class="ex"><h1>7.투뎁스 만들기.</h1>
+       <p> 간단한 시험 예제로 많이 활용 되는 기술이며
+        <br>일명 '메뉴바'만들기 이다. <br><br>
+        활용 되는 body태그: ul,li <br><br>
+        활용 되는 CSS  태그:
+        margin padding width height list-style border line-height  text-align float display:none,block <br><br><br>
+        *display 태그에 대해선 개념 이해를 하고서 사용하면 이해가 편하다.<br>
+        *float의 경우는 쉽게 말해 '옆으로 정렬'이다.<br>
+    </p>
+    </section>
+
+
+</body>
+</html>
